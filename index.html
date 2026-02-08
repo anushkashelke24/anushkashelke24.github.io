@@ -15,30 +15,23 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
 
-<!-- NAVBAR -->
-
 <header class="navbar">
-
 <nav>
 <a href="#home">Home</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
-
 </nav>
-
 </header>
 
 <!-- HERO -->
 
 <section id="home" class="hero">
-
 <h2>Hi, I'm Anushka 👋</h2>
 
 <h3 class="hero-tagline">
@@ -52,76 +45,107 @@ I build interactive dashboards and analyze real-world data to deliver actionable
 <a href="resume/Anushka_Shelke_DA.pdf" class="resume-btn" target="_blank">
 Download Resume
 </a>
-
 </section>
 
 <!-- PROJECTS -->
 
 <section id="projects" class="section">
-
 <h2>Projects</h2>
 
+<!-- NEW DASHBOARD (FIRST) -->
+
 <div class="case-study">
+<img src="images/Hospitality_Revenue_Dashboard.png" class="project-img">
+
+<div class="project-info">
+<h3>Hospitality Revenue & Performance Dashboard</h3>
+
+<p><strong>Designed an interactive dashboard to analyze hotel revenue, occupancy, pricing, and booking performance across cities, room types, and time periods.</p>
+
+<p><strong>Key Insights:</strong></p>
+<ul>
+<li>Tracked revenue, RevPAR, ADR, occupancy %, and realization %</li>
+<li>Identified revenue contribution by business vs luxury category</li>
+<li>Analyzed booking trends by platform and day type</li>
+<li>Compared property-level performance across cities</li>
+</ul>
+
+<p><strong>Tools Used:</strong> Power BI, Power Query, DAX</p>
+
+<p><strong>Business Impact:</strong> Enabled management to monitor performance trends, optimize pricing strategy, and improve occupancy and revenue planning.</p>
+
+<a href="https://github.com/anushkashelke24/power-bi-dashboard-portfolio/tree/main/hospitality-revenue-analytics-dashboard" target="_blank">
+View on GitHub →
+</a>
+</div>
+</div>
+
+<!-- HR DASHBOARD -->
+
+<div class="case-study reverse">
 <img src="images/hr-dashboard.png" class="project-img">
 
 <div class="project-info">
 <h3>HR Analytics Dashboard</h3>
 
-<p><strong>Problem:</strong> Built an interactive HR dashboard to analyze employee attrition, demographics, and job satisfaction, enabling data-driven HR decision making.</p>
+<p>Built an interactive HR dashboard to analyze employee attrition, demographics, and job satisfaction.</p>
 
 <p><strong>Key Insights:</strong></p>
 <ul>
 <li>Overview of total employees, active workforce, and attrition rate</li>
 <li>Department-wise and education-wise attrition trends</li>
 <li>Employee distribution by age group and gender</li>
-<li>Job satisfaction levels across different roles</li>
+<li>Job satisfaction levels across roles</li>
 </ul>
 
 <p><strong>Tools Used:</strong> Power BI, Power Query, DAX</p>
 
-<p><strong>Business Impact:</strong> Helped identify key attrition drivers and supported workforce planning and retention strategies.</p>
+<p><strong>Business Impact:</strong> Helped identify attrition drivers and supported workforce planning and retention strategies.</p>
+
 <a href="https://github.com/anushkashelke24/power-bi-dashboard-portfolio" target="_blank">
 View on GitHub →
 </a>
 </div>
 </div>
 
+<!-- PYTHON PROJECT -->
 
-<div class="case-study reverse">
+<div class="case-study">
 <img src="images/python-trend-dashboard.png" class="project-img">
 
 <div class="project-info">
 <h3>AI & Data Skills Trend Dashboard (Python)</h3>
 
-<p>
-Analyzing the Rise of AI and Data Analytics Skills in India Using Google Trends Data
-</p>
+<p>Analyzed Google Trends data to study the growth of AI and data analytics skills in India.</p>
 
 <ul>
-  <li>AI tools surged sharply after 2022</li>
-  <li>Power BI showing rapid growth</li>
-  <li>Python remains consistently popular</li>
+<li>AI tools surged sharply after 2022</li>
+<li>Power BI showing rapid growth</li>
+<li>Python remains consistently popular</li>
 </ul>
 
-<p><strong>Tools:</strong> Python, pandas, Plotly, Streamlit</p>
+<p><strong>Tools:</strong> Python, Pandas, Plotly, Streamlit</p>
+
 <a href="https://github.com/anushkashelke24/skills-trend-dashboard-python" target="_blank">
 View on GitHub →
 </a>
 </div>
 </div>
 
-<div class="case-study">
+<!-- TABLEAU -->
+
+<div class="case-study reverse">
 <img src="images/tableau-dashboard.png" class="project-img">
 
 <div class="project-info">
 <h3>Airbnb Tableau Dashboard</h3>
-<p> Analyze Airbnb data to uncover insights on pricing, demand, and revenue trends.</p>
-<p><strong>Key Insights:</strong></p>
+
+<p><strong>Problem:</strong> Analyze Airbnb listings to uncover pricing, demand, and revenue trends.</p>
+
 <ul>
-<li>Average price increases with number of bedrooms</li>
-<li>Listing distribution by bedroom count</li>
-<li>Price comparison across zip codes</li>
-<li>Revenue trend over time (weekly)</li>
+<li>Price variation by bedroom count</li>
+<li>Listing distribution across locations</li>
+<li>Weekly revenue trends</li>
 </ul>
 
 <p><strong>Tools:</strong> Tableau</p>
@@ -132,13 +156,15 @@ View on GitHub →
 </div>
 </div>
 
-<div class="case-study reverse">
+<!-- SURVEY -->
+
+<div class="case-study">
 <img src="images/survey-dashboard.png" class="project-img">
 
 <div class="project-info">
 <h3>Data Professional Survey Dashboard</h3>
 
-<p><strong>Problem:</strong> Analyze salary trends and job satisfaction.</p>
+<p><strong>Problem:</strong> Analyze salary trends and job satisfaction across data roles.</p>
 
 <ul>
 <li>Python most popular language</li>
@@ -154,16 +180,17 @@ View on GitHub →
 </div>
 </div>
 
+<!-- WEB SCRAPING -->
 
 <div class="case-study">
-
+<img src="images/web-scraping.png" class="project-img">
 <div class="project-info">
 <h3>Python Web Scraping Project</h3>
 
 <ul>
 <li>Automated data extraction</li>
-<li>Cleaned structured datasets</li>
-<li>Analysis-ready pipelines</li>
+<li>Cleaned and structured datasets</li>
+<li>Built analysis-ready pipelines</li>
 </ul>
 
 <p><strong>Tools:</strong> Python, BeautifulSoup, Requests</p>
@@ -179,65 +206,38 @@ View on GitHub →
 <!-- SKILLS -->
 
 <section id="skills" class="section">
-
 <h2>Skills</h2>
 
 <div class="skills-grid">
 
 <div class="skill-card">
 <h3><i class="fa-solid fa-code"></i> Programming & Query</h3>
-<ul>
-<li>C</li>
-<li>Python</li>
-<li>SQL</li>
-</ul>
+<ul><li>C</li><li>Python</li><li>SQL</li></ul>
 </div>
 
 <div class="skill-card">
 <h3><i class="fa-solid fa-chart-line"></i> Data Analysis</h3>
-<ul>
-<li>Pandas</li>
-<li>NumPy</li>
-<li>EDA</li>
-<li>Data Cleaning</li>
-</ul>
+<ul><li>Pandas</li><li>NumPy</li><li>EDA</li><li>Data Cleaning</li></ul>
 </div>
 
 <div class="skill-card">
 <h3><i class="fa-solid fa-chart-pie"></i> Visualization & BI</h3>
-<ul>
-<li>Power BI</li>
-<li>Tableau</li>
-<li>Excel</li>
-<li>Plotly</li>
-</ul>
+<ul><li>Power BI</li><li>Tableau</li><li>Excel</li><li>Plotly</li></ul>
 </div>
 
 <div class="skill-card">
 <h3><i class="fa-solid fa-database"></i> Databases</h3>
-<ul>
-<li>MySQL</li>
-<li>SQL Server</li>
-</ul>
+<ul><li>MySQL</li><li>SQL Server</li></ul>
 </div>
 
 <div class="skill-card">
 <h3><i class="fa-solid fa-globe"></i> Web & Backend</h3>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>ASP.NET Core</li>
-</ul>
+<ul><li>HTML</li><li>CSS</li><li>ASP.NET Core</li></ul>
 </div>
 
 <div class="skill-card">
 <h3><i class="fa-solid fa-toolbox"></i> Tools & Concepts</h3>
-<ul>
-<li>Git & GitHub</li>
-<li>Streamlit</li>
-<li>OOP</li>
-<li>Agile</li>
-</ul>
+<ul><li>Git & GitHub</li><li>Streamlit</li><li>OOP</li><li>Agile</li></ul>
 </div>
 
 </div>
@@ -246,27 +246,15 @@ View on GitHub →
 <!-- CONTACT -->
 
 <section id="contact" class="section">
-
 <h2>Contact</h2>
 
 <p>Email: anushkashelke.work@email.com</p>
-
-<p>
-<a href="https://github.com/anushkashelke24" target="_blank">GitHub</a>
-</p>
-
-<p>
-<a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
-</p>
-
+<p><a href="https://github.com/anushkashelke24" target="_blank">GitHub</a></p>
+<p><a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a></p>
 </section>
 
-<!-- ANIMATION + TOGGLE -->
-
 <script>
-
 const elements = document.querySelectorAll('.section, .case-study, .skill-card');
-
 const reveal = () => {
 elements.forEach(el => {
 const top = el.getBoundingClientRect().top;
@@ -276,18 +264,14 @@ el.style.transform = "translateY(0)";
 }
 });
 };
-
 elements.forEach(el=>{
 el.style.opacity = 0;
 el.style.transform = "translateY(30px)";
 el.style.transition = "all 0.7s ease";
 });
-
 window.addEventListener('scroll', reveal);
 reveal();
-
 </script>
 
 </body>
 </html>
-
