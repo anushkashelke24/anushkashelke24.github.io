@@ -1,6 +1,9 @@
 html{
 scroll-behavior:smooth
 }
+html{
+scroll-behavior:smooth
+}
 
 *{
 margin:0;
@@ -15,12 +18,14 @@ color:#e5e7eb;
 line-height:1.6
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 .navbar{
 display:flex;
 justify-content:flex-end;
+justify-content:flex-end;
 align-items:center;
+padding:15px 60px;
 padding:15px 60px;
 position:fixed;
 width:100%;
@@ -32,12 +37,18 @@ z-index:100
 .navbar a{
 color:#fff;
 margin-left:20px;
-text-decoration:none
+text-decoration:none;
+font-size:.95rem
 }
 
-/* HERO */
+.navbar a:hover{
+opacity:.8
+}
+
+/* ================= HERO ================= */
 
 .hero{
+min-height:60vh;
 min-height:60vh;
 display:flex;
 flex-direction:column;
@@ -77,7 +88,7 @@ max-width:700px;
 opacity:.85
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 
 .section{
 padding:65px 70px   /* reduced spacing */
@@ -87,8 +98,12 @@ h2{
 font-size:2.1rem;
 margin-bottom:35px
 }
+h2{
+font-size:2.1rem;
+margin-bottom:35px
+}
 
-/* PROJECTS */
+/* ================= PROJECTS ================= */
 
 .case-study{
 display:flex;
@@ -104,9 +119,11 @@ flex-direction:row-reverse
 
 .project-img{
 width:420px;
+max-width:100%;
 border-radius:18px;
 box-shadow:0 15px 30px rgba(0,0,0,.5);
-transition:.4s
+transition:transform .45s ease, box-shadow .45s ease;
+cursor:pointer
 }
 
 .project-img:hover{
@@ -116,12 +133,15 @@ transform:scale(1.03)
 .project-info{
 max-width:500px
 }
+.project-info{
+max-width:500px
+}
 
 .project-info ul{
 margin:8px 0 12px 18px
 }
 
-/* SKILLS */
+/* ================= SKILLS ================= */
 
 .skills-grid{
 display:grid;
@@ -132,11 +152,13 @@ gap:25px   /* slightly tighter */
 .skill-card{
 background:rgba(30,41,59,.9);
 padding:24px;
+padding:24px;
 border-radius:18px;
-transition:.3s
+transition:transform .3s ease, box-shadow .3s ease
 }
 
 .skill-card:hover{
+transform:translateY(-6px);
 transform:translateY(-6px);
 box-shadow:0 12px 25px rgba(0,0,0,.4)
 }
@@ -145,9 +167,10 @@ box-shadow:0 12px 25px rgba(0,0,0,.4)
 list-style:none
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 
 .resume-btn{
+margin-top:18px;
 margin-top:18px;
 padding:12px 28px;
 background:#38bdf8;
@@ -155,7 +178,7 @@ color:#020617;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
-transition:.3s
+transition:transform .3s ease
 }
 
 .resume-btn:hover{
@@ -181,7 +204,7 @@ color:#020617
 }
 
 body.light .navbar{
-background:#ffffff;
+background:#ffffff
 }
 
 body.light .skill-card,
