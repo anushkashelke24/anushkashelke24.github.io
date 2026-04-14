@@ -1,249 +1,71 @@
-html{
-scroll-behavior:smooth
-}
-html{
-scroll-behavior:smooth
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif
-}
-
 body{
-background:linear-gradient(180deg,#020617,#0f172a);
-color:#e5e7eb;
-line-height:1.6
+background: linear-gradient(135deg,#020617,#0f172a);
+color:#e2e8f0;
+font-family:'Inter',sans-serif;
 }
 
-/* ================= NAVBAR ================= */
+/* HERO */
 
-.navbar{
+.gradient-text{
+background: linear-gradient(90deg,#38bdf8,#6366f1);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+/* IMPACT */
+
+.impact{
 display:flex;
-justify-content:flex-end;
-justify-content:flex-end;
-align-items:center;
-padding:15px 60px;
-padding:15px 60px;
-position:fixed;
-width:100%;
-background:rgba(2,6,23,.95);
-backdrop-filter:blur(5px);
-z-index:100
+justify-content:center;
+gap:25px;
+margin-top:25px;
+flex-wrap:wrap;
 }
 
-.navbar a{
-color:#fff;
-margin-left:20px;
-text-decoration:none;
-font-size:.95rem
+.impact div{
+background:rgba(255,255,255,0.06);
+padding:10px 18px;
+border-radius:10px;
 }
 
-.navbar a:hover{
-opacity:.8
-}
+/* PROJECT CARD (MAIN UPGRADE) */
 
-/* ================= HERO ================= */
-
-.hero{
-min-height:60vh;
-min-height:60vh;
+.projects-wrapper{
 display:flex;
 flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:60px 20px
+gap:50px;
 }
 
-.hero h2{
-font-size:2.7rem;
-margin-bottom:12px;
-font-weight:700
-}
-.hero-tagline{
-font-size:1.2rem;
-font-weight:400;
-opacity:.85;
-margin-bottom:14px
-}
-.hero-desc{
-font-size:1rem;
-max-width:600px;
-opacity:.75;
-margin-bottom:25px;
-line-height:1.6
-}
-
-.hero h3{
-font-weight:500;
-margin-bottom:12px
-}
-
-.hero p{
-margin-top:8px;
-max-width:700px;
-opacity:.85
-}
-
-/* ================= SECTIONS ================= */
-
-.section{
-padding:65px 70px   /* reduced spacing */
-}
-
-h2{
-font-size:2.1rem;
-margin-bottom:35px
-}
-h2{
-font-size:2.1rem;
-margin-bottom:35px
-}
-
-/* ================= PROJECTS ================= */
-
-.case-study{
+.project-card{
 display:flex;
-gap:45px;
-margin-bottom:70px;   /* reduced from 120px */
-flex-wrap:wrap;
-align-items:center
+gap:30px;
+align-items:center;
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:18px;
+backdrop-filter:blur(12px);
+transition:0.3s;
 }
 
-.case-study.reverse{
-flex-direction:row-reverse
+.project-card:hover{
+transform:translateY(-6px);
 }
+
+/* IMAGE */
 
 .project-img{
-width:420px;
-max-width:100%;
-border-radius:18px;
-box-shadow:0 15px 30px rgba(0,0,0,.5);
-transition:transform .45s ease, box-shadow .45s ease;
-cursor:pointer
+width:380px;
+border-radius:15px;
+transition:0.4s;
 }
 
 .project-img:hover{
-transform:scale(1.03)
+transform:scale(1.05);
 }
 
-.project-info{
-max-width:500px
-}
-.project-info{
-max-width:500px
-}
-
-.project-info ul{
-margin:8px 0 12px 18px
-}
-
-/* ================= SKILLS ================= */
-
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px   /* slightly tighter */
-}
+/* SKILLS */
 
 .skill-card{
-background:rgba(30,41,59,.9);
-padding:24px;
-padding:24px;
-border-radius:18px;
-transition:transform .3s ease, box-shadow .3s ease
-}
-
-.skill-card:hover{
-transform:translateY(-6px);
-transform:translateY(-6px);
-box-shadow:0 12px 25px rgba(0,0,0,.4)
-}
-
-.skill-card ul{
-list-style:none
-}
-
-/* ================= BUTTON ================= */
-
-.resume-btn{
-margin-top:18px;
-margin-top:18px;
-padding:12px 28px;
-background:#38bdf8;
-color:#020617;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-transition:transform .3s ease
-}
-
-.resume-btn:hover{
-transform:scale(1.05)
-}
-
-/* TOGGLE */
-
-.toggle-btn{
-background:none;
-border:none;
-color:white;
-font-size:1.2rem;
-cursor:pointer;
-margin-left:20px
-}
-
-/* LIGHT MODE */
-
-body.light{
-background:#f8fafc;
-color:#020617
-}
-
-body.light .navbar{
-background:#ffffff
-}
-
-body.light .skill-card,
-body.light .project-info{
-background:#e5e7eb;
-color:#020617
-}
-
-/* MOBILE */
-
-@media (max-width:900px){
-
-.navbar{
-padding:12px 25px
-}
-
-.section{
-padding:55px 25px
-}
-
-.case-study{
-flex-direction:column;
-margin-bottom:60px
-}
-
-.project-img{
-width:100%
-}
-
-.hero{
-min-height:55vh;
-padding:60px 20px
-}
-
-.hero h2{
-font-size:2.1rem
-}
-
-.skills-grid{
-grid-template-columns:1fr
-}
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
 }
